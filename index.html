@@ -9,12 +9,11 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #e8f0fe;
       margin: 0;
-      padding: 10px 10px 10px 10px;
+      padding: 0;
       display: flex;
       justify-content: center;
-/*       align-items: center; */
-      height: 100vh;
-      overflow: hidden; /* ✅ السطر اللي بيمنع السكرول */
+      padding-top: 20px;
+      overflow: hidden; /* يمنع السكرول */
     }
 
     .card {
@@ -23,9 +22,8 @@
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
       width: 95%;
-      max-width: 500px;
+      max-width: 420px; /* ✅ تصغير بسيط للكارت */
       text-align: center;
-      margin: 40px 0; /* ✅ المسافة من فوق وتحت */
     }
 
     .card img {
@@ -61,30 +59,29 @@
       color: #333;
       margin-right: 8px;
     }
-    
+
     .buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
 
     .button {
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
     .button:hover {
-  background-color: #357ABD;
-}
-
+      background-color: #357ABD;
+    }
   </style>
 </head>
 <body>
@@ -116,9 +113,9 @@
       <span class="value">في حال حدوث أي مشكلة مع المندوب، يرجى التواصل فورًا مع رقم الدعم، وذكر كود المندوب لضمان سرعة المعالجة.</span>
     </div>
     <div class="buttons">
-  <a class="button" href="tel:01065640230">اتصل بالدعم</a>
-  <a class="button" href="https://wa.me/201065640230" target="_blank">راسل الدعم على واتساب</a>
-</div>
+      <a class="button" href="tel:01065640230">اتصل بالدعم</a>
+      <a class="button" href="https://wa.me/201065640230" target="_blank">راسل الدعم على واتساب</a>
+    </div>
   </div>
 </body>
 </html>
