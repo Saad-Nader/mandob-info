@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بيانات المندوب</title>
   <style>
     body {
@@ -27,8 +27,8 @@
     }
 
     .card img {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #4a90e2;
@@ -38,14 +38,16 @@
     h2 {
       color: #2c3e50;
       margin-bottom: 25px;
+      font-size: 24px;
     }
 
     .field {
       text-align: right;
-      margin: 10px 0;
-      padding: 8px 10px;
+      margin: 12px 0;
+      padding: 10px 12px;
       background-color: #f5f8ff;
       border-radius: 8px;
+      font-size: 17px;
     }
 
     .label {
@@ -57,15 +59,38 @@
       color: #333;
       margin-right: 8px;
     }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #357ABD;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="https://i.postimg.cc/9FmxZ1x5/Whats-App-Image-2025-06-06-at-11-30-31-PM.jpg" alt="صورة المندوب">
+    <img src="https://i.postimg.cc/QxxYL0ZN/Whats-App-Image-2025-06-06-at-10-54-07-PM.jpg" alt="صورة المندوب">
     <h2>بيانات المندوب</h2>
     <div class="field">
       <span class="label">الاسم:</span>
-      <span class="value">Mohamed Nader Mohamed</span>
+      <span class="value">Mohamed Nader</span>
     </div>
     <div class="field">
       <span class="label">العمر:</span>
@@ -86,6 +111,10 @@
     <div class="field">
       <span class="label">ملاحظات:</span>
       <span class="value">في حال حدوث أي مشكلة مع المندوب، يرجى التواصل فورًا مع رقم الدعم، وذكر كود المندوب لضمان سرعة المعالجة.</span>
+    </div>
+    <div class="buttons">
+      <a class="button" href="tel:01065640230">اتصل بالدعم</a>
+      <a class="button" href="https://wa.me/201065640230" target="_blank">راسل الدعم على واتساب</a>
     </div>
   </div>
 </body>
