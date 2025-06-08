@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بيانات المندوب</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #e8f0fe;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-      padding-bottom: 30px;
       min-height: 100vh;
-      box-sizing: border-box;
+      align-items: center;
+    }
+
+    .verified {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      padding: 20px;
     }
 
     .card {
@@ -27,7 +44,6 @@
       width: 95%;
       max-width: 420px;
       text-align: center;
-      margin-bottom: 20px;
     }
 
     .card img {
@@ -69,6 +85,7 @@
       display: flex;
       justify-content: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .button {
@@ -91,42 +108,55 @@
       font-size: 14px;
       color: #888;
       text-align: center;
-      margin-top: auto;
-      padding-bottom: 10px;
+      padding: 10px 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://i.postimg.cc/QxxYL0ZN/Whats-App-Image-2025-06-06-at-10-54-07-PM.jpg" alt="صورة المندوب">
-    <h2>بيانات المندوب</h2>
-    <div class="field">
-      <span class="label">الاسم:</span>
-      <span class="value">Saad Nader Mohamed</span>
-    </div>
-    <div class="field">
-      <span class="label">العمر:</span>
-      <span class="value">24</span>
-    </div>
-    <div class="field">
-      <span class="label">رقم الهاتف:</span>
-      <span class="value">01065640230</span>
-    </div>
-    <div class="field">
-      <span class="label">كود المندوب:</span>
-      <span class="value">212102</span>
-    </div>
-    <div class="field">
-      <span class="label">رقم مكتب الدعم:</span>
-      <span class="value">01065640230</span>
-    </div>
-    <div class="field">
-      <span class="label">ملاحظات:</span>
-      <span class="value">في حال حدوث أي مشكلة مع المندوب، يرجى التواصل فورًا مع رقم الدعم، وذكر كود المندوب لضمان سرعة المعالجة.</span>
-    </div>
-    <div class="buttons">
-      <a class="button" href="tel:01065640230">اتصل بالدعم</a>
-      <a class="button" href="https://wa.me/201065640230" target="_blank">راسل الدعم على واتساب</a>
+  <div class="content">
+    <div class="card">
+      <img src="https://i.postimg.cc/QxxYL0ZN/Whats-App-Image-2025-06-06-at-10-54-07-PM.jpg" alt="صورة المندوب">
+      <div class="verified">مندوب موثّق ✅</div>
+      <h2>بيانات المندوب</h2>
+      <div class="field">
+        <span class="label">الاسم:</span>
+        <span class="value">Saad Nader Mohamed 🌟 4.8</span>
+      </div>
+      <div class="field">
+        <span class="label">العمر:</span>
+        <span class="value">24</span>
+      </div>
+      <div class="field">
+        <span class="label">رقم الهاتف:</span>
+        <span class="value">01065640230</span>
+      </div>
+      <div class="field">
+        <span class="label">كود المندوب:</span>
+        <span class="value">212102</span>
+      </div>
+      <div class="field">
+        <span class="label">رقم مكتب الدعم:</span>
+        <span class="value">01065640230</span>
+      </div>
+      <div class="field">
+        <span class="label">يغطي مناطق:</span>
+        <span class="value">دكرنس - منية النصر - ميت فارس</span>
+      </div>
+      <div class="field">
+        <span class="label">أوقات العمل:</span>
+        <span class="value">من 10 صباحًا حتى 9 مساءً</span>
+      </div>
+      <div class="field">
+        <span class="label">ملاحظات:</span>
+        <span class="value">في حال حدوث أي مشكلة مع المندوب، يرجى التواصل فورًا مع رقم الدعم، وذكر كود المندوب لضمان سرعة المعالجة.</span>
+      </div>
+      <div class="buttons">
+        <a class="button" href="tel:01065640230">اتصل بالدعم</a>
+        <a class="button" href="https://wa.me/201065640230" target="_blank">راسل الدعم واتساب</a>
+        <a class="button" href="https://forms.gle/your-form-link" target="_blank">قيّم تجربتك</a>
+        <a class="button" href="" onclick="location.reload()">تحديث</a>
+      </div>
     </div>
   </div>
   <div class="footer">© 2025 Eng. Saad Nader</div>
